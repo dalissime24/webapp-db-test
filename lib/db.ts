@@ -2,11 +2,13 @@ import Database from "better-sqlite3";
 import path from "path";
 import fs from "fs";
 
-const DB_DIR = path.join(process.cwd(), "data");
+// 환경변수로 경로 지정 가능 (Azure 운영용)
+const DB_DIR = process.env.DB_DIR || path.join(process.cwd(), "data");
 const DB_PATH = path.join(DB_DIR, "daeduck.db");
 
 if (!fs.existsSync(DB_DIR)) {
   fs.mkdirSync(DB_DIR, { recursive: true });
+
 }
 
 let db: Database.Database;
