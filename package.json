@@ -13,10 +13,14 @@
     "next": "16.2.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+
+    "mssql": "^10.0.0",
+
     "@anthropic-ai/sdk": "^0.95.2",
     "@google/generative-ai": "^0.24.1",
     "groq-sdk": "^1.2.0",
     "@tavily/core": "^0.7.3",
+
     "@tiptap/extension-character-count": "^3.22.4",
     "@tiptap/extension-code-block-lowlight": "^3.22.4",
     "@tiptap/extension-color": "^3.22.4",
@@ -37,6 +41,7 @@
     "@tiptap/react": "^3.22.3",
     "@tiptap/starter-kit": "^3.22.3",
     "@tiptap/suggestion": "^3.22.3",
+
     "better-sqlite3": "^12.9.0",
     "bcryptjs": "^3.0.3",
     "jose": "^6.2.2",
@@ -46,8 +51,14 @@
     "sanitize-html": "^2.17.2",
     "lowlight": "^3.3.0",
     "tippy.js": "^6.3.7",
+
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4"
+
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "16.2.3",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -57,9 +68,5 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/nodemailer": "^8.0.0",
     "@types/sanitize-html": "^2.16.1"
-  },
-  "devDependencies": {
-    "eslint": "^9",
-    "eslint-config-next": "16.2.3"
   }
 }
